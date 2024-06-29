@@ -112,6 +112,7 @@ SizeSelector.prototype = Object.assign(
         card.classList.remove(className);
       });
       element.classList.add(className);
+      element.setAttribute('aria-checked', 'true');
     },
 
     selectCard(selected, index) {
